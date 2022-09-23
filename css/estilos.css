@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Qwitcher+Grypen:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../img/13295056_5186109.jpg);
+    margin: 20px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.decor{
+    margin: 20px;
+    font-family: 'Poppins';
+    color: black;
+    background: rgba( 255, 223, 242, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+header{
+    background-color: rgba(255, 198, 231, 0.788);
+    padding: 80px;
+    margin: 30px;
+    background: rgba( 255, 223, 242, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.margin{
+    margin: 100px;
+}
+
+li{
+    font-family: 'Poppins';
+    color: black;
+    background: rgba( 255, 223, 242, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+li:hover{
+    transform: scale(125%);
+    transition: all 1s;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins';
+
+}
+
+h1{
+    color: black;
+    padding: 40px;
+    margin: 50px 40px 50px 40px;
+    border: 10px solid rgba(255, 198, 231, 0.788);
+    text-align: center;
+    font-family: 'Qwitcher Grypen';
+    font-size: 100px;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+article{
+    color: white;
+    width: 80%;
+    margin: 15px;
+    border: 10px dotted rgb(255, 137, 220);
+    background-color: rgba(207, 204, 207, 0.911);
+    font-size: 18px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+img{
+    border-radius: 50px;
+}
+
+footer{
+    margin-top: 100px;
+    background: rgba( 255, 223, 242, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+h2{
+    text-align: center;
+    font-family: 'Qwitcher Grypen';
+    font-size: 100px;
+    color: rgb(255, 137, 220);
+}
+
+
+figure{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: rgba( 255, 242, 250, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.col{
+    padding: 10px;
+
+}
+
+.servicios{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "item-1 item-2"
+    "item-3 item-4"
+    ;
+}
+.item-1{
+    grid-area: item-1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item-2{
+    grid-area: item-2;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item-3{
+    grid-area: item-3;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item-4{
+    grid-area: item-4;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+.combinacion{
+    transition: all 3s;
+}
+.combinacion:hover{
+    transform: rotate(360deg);
+}
+
+.shop{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "shop-1 shop-2 shop-3 shop-4"
+    "shop-5 shop-6 shop-7 shop-8"
+    "shop-9 shop-10 shop-11 shop-12"
+    "shop-13 shop-14 shop-15 shop-16"
+    ;
+}
+
+.shop-1{
+    grid-area: shop-1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-2{
+    grid-area: shop-2;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-3{
+    grid-area: shop-3;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-4{
+    grid-area: shop-4;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-5{
+    grid-area: shop-5;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-6{
+    grid-area: shop-6;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-7{
+    grid-area: shop-7;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-8{
+    grid-area: shop-8;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-9{
+    grid-area: shop-9;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-10{
+    grid-area: shop-10;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-11{
+    grid-area: shop-11;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-12{
+    grid-area: shop-12;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-13{
+    grid-area: shop-13;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-14{
+    grid-area: shop-14;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-15{
+    grid-area: shop-15;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shop-16{
+    grid-area: shop-16;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "logo texto texto texto texto"
+    "texto2 texto2 mapa mapa mapa"
+    "texto3 texto3 mapa mapa mapa";
+}
+
+.logo { grid-area: logo; }
+
+.texto {
+    grid-area: texto;
+    align-content: center;
+}
+
+.mapa { grid-area: mapa; }
+
+.texto2 { grid-area: texto2; }
+
+.texto3 { grid-area: texto3; }
