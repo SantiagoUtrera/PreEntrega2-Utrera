@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Qwitcher+Grypen:wght@700&display=swap');
-
+/* Mobile First*/
 *{
     padding: 0;
     margin: 0;
@@ -10,13 +10,26 @@ body{
     margin: 20px;
 }
 
-.main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+header{
+    background-color: rgba(255, 198, 231, 0.788);
+    margin: 30px;
+    background: rgba( 255, 223, 242, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
+li{
+    font-family: 'Poppins';
+    color: black;
+    background: rgba( 255, 223, 242, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .decor{
@@ -31,42 +44,6 @@ body{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-header{
-    background-color: rgba(255, 198, 231, 0.788);
-    padding: 80px;
-    margin: 30px;
-    background: rgba( 255, 223, 242, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 9px );
-    -webkit-backdrop-filter: blur( 9px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.margin{
-    margin: 100px;
-}
-
-li{
-    font-family: 'Poppins';
-    color: black;
-    background: rgba( 255, 223, 242, 0.7 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-li:hover{
-    transform: scale(125%);
-    transition: all 1s;
-}
-
-ul{
-    list-style-type: none;
-}
-
 a{
     color: black;
     text-align: center;
@@ -74,6 +51,31 @@ a{
     font-size: 20px;
     font-family: 'Poppins';
 
+}
+
+ul{
+    list-style-type: none;
+}
+
+.imgNav{
+    visibility: hidden;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.shop{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 }
 
 h1{
@@ -124,7 +126,6 @@ h2{
     color: rgb(255, 137, 220);
 }
 
-
 figure{
     margin: 40px;
     display: flex;
@@ -132,12 +133,55 @@ figure{
     justify-content: center;
 }
 
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: rgba( 255, 242, 250, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.col{
+    padding: 10px;
+
+}
 
 .pie{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
+
+@media(min-width: 1024px) {
+
+.imgNav{
+    visibility: visible;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.margin{
+    margin: 100px;
+}
+
+li:hover{
+    transform: scale(125%);
+    transition: all 1s;
+}
+
 .row{
     display: flex;
     flex-direction: row;
@@ -200,13 +244,7 @@ figure{
     justify-content: center;
 }
 
-.shop{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-}
+
 .combinacion{
     transition: all 3s;
 }
@@ -379,3 +417,4 @@ figure{
 .texto2 { grid-area: texto2; }
 
 .texto3 { grid-area: texto3; }
+}
