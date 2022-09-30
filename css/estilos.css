@@ -193,6 +193,151 @@ figure{
         flex-direction: column;
     }
 
+    .shop{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-template-areas: 
+        "shop-1 shop-2"
+        "shop-3 shop-4"
+        "shop-5 shop-6"
+        "shop-7 shop-8"
+        "shop-9 shop-10"
+        "shop-11 shop-12"
+        "shop-13 shop-14"
+        "shop-15 shop-16"
+        ;
+    }
+    
+    .shop-1{
+        grid-area: shop-1;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-2{
+        grid-area: shop-2;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-3{
+        grid-area: shop-3;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-4{
+        grid-area: shop-4;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-5{
+        grid-area: shop-5;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-6{
+        grid-area: shop-6;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-7{
+        grid-area: shop-7;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-8{
+        grid-area: shop-8;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-9{
+        grid-area: shop-9;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-10{
+        grid-area: shop-10;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-11{
+        grid-area: shop-11;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-12{
+        grid-area: shop-12;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-13{
+        grid-area: shop-13;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-14{
+        grid-area: shop-14;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-15{
+        grid-area: shop-15;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop-16{
+        grid-area: shop-16;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
     }
 @media(min-width: 1024px) {
@@ -232,6 +377,19 @@ li:hover{
 .col{
     padding: 10px;
 
+}
+
+.shop{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "shop-1 shop-2 shop-3 shop-4"
+    "shop-5 shop-6 shop-7 shop-8"
+    "shop-9 shop-10 shop-11 shop-12"
+    "shop-13 shop-14 shop-15 shop-16"
+    ;
 }
 
 .servicios{
@@ -283,148 +441,6 @@ li:hover{
 }
 .combinacion:hover{
     transform: rotate(360deg);
-}
-
-.shop{
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-template-areas: 
-    "shop-1 shop-2 shop-3 shop-4"
-    "shop-5 shop-6 shop-7 shop-8"
-    "shop-9 shop-10 shop-11 shop-12"
-    "shop-13 shop-14 shop-15 shop-16"
-    ;
-}
-
-.shop-1{
-    grid-area: shop-1;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-2{
-    grid-area: shop-2;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-3{
-    grid-area: shop-3;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-4{
-    grid-area: shop-4;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-5{
-    grid-area: shop-5;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-6{
-    grid-area: shop-6;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-7{
-    grid-area: shop-7;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-8{
-    grid-area: shop-8;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-9{
-    grid-area: shop-9;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-10{
-    grid-area: shop-10;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-11{
-    grid-area: shop-11;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-12{
-    grid-area: shop-12;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-13{
-    grid-area: shop-13;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-14{
-    grid-area: shop-14;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-15{
-    grid-area: shop-15;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.shop-16{
-    grid-area: shop-16;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .nosotros {  display: grid;
