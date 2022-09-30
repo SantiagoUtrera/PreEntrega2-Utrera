@@ -158,20 +158,44 @@ figure{
     justify-content: flex-start;
 }
 
+.tamanoVideo{
+    width: 300px;
+    height: 300px;
+}
+
+@media(min-width: 768px) {
+
+    .imgNav{
+        visibility: visible;
+    }
+    
+    .row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background: rgba( 255, 242, 250, 0.7 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 0px );
+        -webkit-backdrop-filter: blur( 0px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .col{
+        padding: 10px;
+    
+    }
+
+    .rowVideo{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    }
 @media(min-width: 1024px) {
-
-.imgNav{
-    visibility: visible;
-}
-
-.main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
-}
 
 .margin{
     margin: 100px;
@@ -180,6 +204,15 @@ figure{
 li:hover{
     transform: scale(125%);
     transition: all 1s;
+}
+.tamanoVideo{
+    width: 500px;
+    height: 500px;
+}
+
+.rowVideo{
+    display: flex;
+    flex-direction: row;
 }
 
 .row{
