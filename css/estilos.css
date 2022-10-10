@@ -9,6 +9,9 @@ body{
     background-image: url(../img/13295056_5186109.jpg);
     margin: 20px;
 }
+.fixed-top {
+    position: initial;
+}
 
 header{
     background-color: rgba(255, 198, 231, 0.788);
@@ -33,6 +36,9 @@ li{
 }
 
 .decor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px;
     font-family: 'Poppins';
     color: black;
@@ -42,6 +48,19 @@ li{
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.mb-3 {
+    margin: 1rem!important;
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 70%;
+}
+.margin{
+    margin: 30px;
 }
 
 a{
@@ -55,10 +74,6 @@ a{
 
 ul{
     list-style-type: none;
-}
-
-.imgNav{
-    visibility: hidden;
 }
 
 .main{
@@ -80,12 +95,12 @@ ul{
 
 h1{
     color: black;
-    padding: 40px;
-    margin: 120px 40px 50px 40px;
+    padding: 20px;
+    margin: 50px 20px 50px 20px;
     border: 10px solid rgba(255, 198, 231, 0.788);
     text-align: center;
     font-family: 'Qwitcher Grypen';
-    font-size: 100px;
+    font-size: 60px;
 }
 
 p{
@@ -110,7 +125,7 @@ img{
 }
 
 footer{
-    margin-top: 100px;
+    margin-top: 50px;
     background: rgba( 255, 223, 242, 0.4 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 9px );
@@ -140,7 +155,53 @@ figure{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.servicios{
+    display: flex;
+    flex-direction: column;
+}
+.item-1{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item-2{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item-3{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item-4{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whatsappBoton{
+    color: green;
+}
+
 .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
 
 }
@@ -155,37 +216,7 @@ figure{
     width: 300px;
     height: 300px;
 }
-
-@media(min-width: 768px) {
-
-    .imgNav{
-        visibility: visible;
-    }
-    
-    .row{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        background: rgba( 255, 242, 250, 0.7 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 0px );
-        -webkit-backdrop-filter: blur( 0px );
-        border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-    }
-    
-    .col{
-        padding: 10px;
-    
-    }
-
-    .rowVideo{
-        display: flex;
-        flex-direction: column;
-    }
-
+@media(min-width: 480px) {
     .shop{
         display: grid;
         width: 100%;
@@ -331,12 +362,98 @@ figure{
         align-items: center;
         justify-content: center;
     }
+    }
+
+@media(min-width: 768px) {
+
+    h1{
+        color: black;
+        padding: 20px;
+        margin: 50px 20px 50px 20px;
+        border: 10px solid rgba(255, 198, 231, 0.788);
+        text-align: center;
+        font-family: 'Qwitcher Grypen';
+        font-size: 100px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background: rgba( 255, 242, 250, 0.7 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 0px );
+        -webkit-backdrop-filter: blur( 0px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    
+    .col{
+        padding: 10px;
+    
+    }
+
+    .rowVideo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicios{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "item-1 item-2"
+        "item-3 item-4"
+        ;
+    }
+    .item-1{
+        grid-area: item-1;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .item-2{
+        grid-area: item-2;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .item-3{
+        grid-area: item-3;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .item-4{
+        grid-area: item-4;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 
     }
 @media(min-width: 1024px) {
 
 .margin{
     margin: 100px;
+}
+.whatsappBoton:hover{
+    scale: 110%;
+    transition: 1s;
 }
 
 li:hover{
@@ -385,58 +502,11 @@ li:hover{
     ;
 }
 
-.servicios{
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
-    "item-1 item-2"
-    "item-3 item-4"
-    ;
-}
-.item-1{
-    grid-area: item-1;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.item-2{
-    grid-area: item-2;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.item-3{
-    grid-area: item-3;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.item-4{
-    grid-area: item-4;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-
-.combinacion{
-    transition: all 3s;
-}
-.combinacion:hover{
-    transform: rotate(360deg);
-}
 
 .nosotros {  display: grid;
+    align-items: center;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
