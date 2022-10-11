@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Qwitcher+Grypen:wght@700&display=swap');
-/* Mobile First*/
-*{
-    padding: 0;
-    margin: 0;
-}
+@import "fuentes";
+@import "generales";
 
-body{
-    background-image: url(../img/13295056_5186109.jpg);
-    margin: 20px;
-}
+
 .fixed-top {
     position: initial;
 }
