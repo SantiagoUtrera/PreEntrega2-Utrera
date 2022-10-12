@@ -1,0 +1,53 @@
+h2{
+    font-size: 22px;
+    font-family: 'Poppins';
+    color: black;
+}
+
+h3{
+    font-size: 20px;
+    font-family: 'Poppins';
+    color: black;
+}
+
+h4{
+    font-size: 18px;
+    font-family: 'Poppins';
+    color: black;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+article{
+    color: white;
+    width: 80%;
+    margin: 15px;
+    border: 10px dotted rgb(255, 137, 220);
+    background-color: rgba(207, 204, 207, 0.911);
+    font-size: 18px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+img{
+    border-radius: 50px;
+}
+
+figure{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
