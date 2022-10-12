@@ -155,7 +155,7 @@ figure {
   align-items: center;
 }
 @media (min-width: 480px) {
-  .shop .shop {
+  .shop {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
@@ -212,9 +212,7 @@ figure {
   }
 }
 @media (min-width: 1024px) {
-  .shop .shop {
-    display: grid;
-    width: 100%;
+  .shop {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "shop-1 shop-2 shop-3 shop-4" "shop-5 shop-6 shop-7 shop-8" "shop-9 shop-10 shop-11 shop-12" "shop-13 shop-14 shop-15 shop-16";
