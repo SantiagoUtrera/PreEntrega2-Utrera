@@ -3,12 +3,8 @@
 }
 
 .header{
-    background-color: rgba(255, 198, 231, 0.788);
     margin: 30px;
-    background: rgba( 255, 223, 242, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    @extend .decorNav;
 }
 
 ul{
@@ -17,12 +13,6 @@ ul{
     li{
         font-family: 'Poppins';
         color: black;
-        background: rgba( 255, 223, 242, 0.7 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
-        border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
 
         a{
             color: black;
@@ -30,19 +20,14 @@ ul{
             text-decoration: none;
             font-size: 20px;
             font-family: 'Poppins';
-        
+            @extend .decorNav;
         }
     }
 }
 
 footer{
     margin-top: 50px;
-    background: rgba( 255, 223, 242, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 9px );
-    -webkit-backdrop-filter: blur( 9px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    @extend .decorNav;
 }
 
 .pie{

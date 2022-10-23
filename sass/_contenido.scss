@@ -26,11 +26,11 @@ article{
     color: white;
     width: 80%;
     margin: 15px;
-    border: 10px dotted rgb(255, 137, 220);
-    background-color: rgba(207, 204, 207, 0.911);
+    @extend .decorNav;
     font-size: 18px;
     font-family: 'Poppins';
     text-align: center;
+    color: black;
 }
 
 img{
@@ -50,4 +50,7 @@ figure{
     align-items: center;
     justify-content: center;
     margin: 10px;
+    font-family: 'Poppins';
+    color: black;
+    @extend .decorNav;
 }

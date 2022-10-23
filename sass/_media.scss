@@ -171,18 +171,26 @@ h1{
     "texto3 texto3 mapa mapa mapa";
 
     }
-    .logo { grid-area: logo; }
+    .logo { 
+        grid-area: logo; 
+    }
 
     .texto {
         grid-area: texto;
         align-content: center;
     }
     
-    .mapa { grid-area: mapa; }
+    .mapa { 
+        grid-area: mapa; 
+    }
     
-    .texto2 { grid-area: texto2; }
+    .texto2 { 
+        grid-area: texto2; 
+    }
     
-    .texto3 { grid-area: texto3; }
+    .texto3 { 
+        grid-area: texto3; 
+    }
 }
 
 .margin{
